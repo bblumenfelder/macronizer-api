@@ -7,7 +7,7 @@ services:
     container_name: flask
     restart: always
     environment:
-      - APP_NAME=latin-macronizer
+      - APP_NAME=macronizer_api
     expose:
       - 8080
 
