@@ -35,6 +35,8 @@ jobs:
             touch /tmp/uwsgi.log
             mkdir macronizer_api && cd macronizer_api/
             git init
+            git config --global user.name "bblumenfelder"
+            git config --global user.email "benedikt.blumenfelder@gmail.com"
             git pull https://github.com/bblumenfelder/macronizer_api.git
             docker-compose up --build
             exit
