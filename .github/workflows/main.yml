@@ -33,7 +33,7 @@ jobs:
           script: |
             docker image prune
             touch /tmp/uwsgi.log
-            cd latin-macronizer/
+            mkdir macronizer_api && cd macronizer_api/
             git init
             git pull https://github.com/bblumenfelder/macronizer_api.git
             docker-compose up --build
