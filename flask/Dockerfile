@@ -4,7 +4,7 @@ COPY requirements.txt /
 RUN pip install -r requirements.txt
 ADD . /
 CMD ["uwsgi", "app.ini"]
-COPY /latin-macronizer /latin-macronizer
+ADD latin-macronizer /
 RUN apt install -y \
     build-essential \
     libfl-dev \
